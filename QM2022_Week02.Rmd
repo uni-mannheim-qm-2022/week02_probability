@@ -563,7 +563,7 @@ ggplot() + # this creates an empty plot
 
 We saw that the binomial distribution can be approximated by the normal. Let's calculate the airplane reservation example using a normal distribution.
 
-First, we have to think about the underlying distribution. Using the central limit theorem, we can translate the binomial process into a normal distribution. 0.85 percent of the people are expected to show up, thus the mean can be calculated by $E(X)=n*p$. The variance can be calculated using $Var(X)=n*p*(1-p)$ (see slide 15).
+First, we have to think about the underlying distribution. Using the central limit theorem, we can translate the binomial process into a normal distribution. 0.85 percent of the people are expected to show up, thus the mean can be calculated by $E(X)=n*p$. The variance can be calculated using $Var(X)=n*p*(1-p)$ (see slide 13).
 
 Let's calculate the mean and the variance of the normal distribution:
 
@@ -940,7 +940,7 @@ plot(x = xaxis,
 
 We saw that the binomial distribution can be approximated by the normal. Let's calculate the airplane reservation example using a normal distribution.
 
-First, we have to think about the underlying distribution. Using the central limit theorem, we can translate the binomial process into a normal distribution. 0.89 percent of the people are expected to show up, thus the mean can be calculated by $E(X)=n*p$. The variance can be calculated using $Var(X)=n*p*(1-p)$ (see slide 15).
+First, we have to think about the underlying distribution. Using the central limit theorem, we can translate the binomial process into a normal distribution. 0.89 percent of the people are expected to show up, thus the mean can be calculated by $E(X)=n*p$. The variance can be calculated using $Var(X)=n*p*(1-p)$ (see slide 13).
 
 Let's calculate the mean and the standard deviation of the normal distribution:
 
