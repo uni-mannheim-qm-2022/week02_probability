@@ -14,7 +14,7 @@ output:
     toc_float: true
     css: css/lab.css
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: inline
 ---
 
 ------------------------------------------------------------------------
@@ -913,14 +913,13 @@ a)  What is the probability that more than 250 people show up?
 b)  Plot the cumulative distribution function of the problem.
 c)  What is the probability of more than 250 people showing up if the airline limits overbooking to 260?
 
-```{r Airline Exercise I}
+```{r Airline Exercise I, eval = F}
 # Answer to a):
-1 - pbinom(q = 250, size = 275, p = 0.89)
 
 # Answer to b):
 xaxis <-c(0:275) # for x-axis
 plot(x = xaxis, 
-     y = pbinom(q = xaxis, size = 275, p = 0.89),
+     y = # ??
      bty = "n",
      las = 1,
      pch = 19,
@@ -933,7 +932,6 @@ plot(x = xaxis,
      )
 
 # Answer to c):
-1 - pbinom(q = 250, size = 260, p = 0.85)
 ```
 
 ### Exercise B: Airline reservations and the Normal Approximation
@@ -944,15 +942,15 @@ First, we have to think about the underlying distribution. Using the central lim
 
 Let's calculate the mean and the standard deviation of the normal distribution:
 
-```{r Airline Exercise II}
-n <- 275
-p <- 0.89
+```{r Airline Exercise II, eval = F}
+# n <- 
+# p <- 
 
-mean <- n * p
-sd <- sqrt((n * p * (1 - p)))  # Why do we have to use the square root?
+# mean <- 
+# sd <- 
 
-mean
-sd
+# mean
+# sd
 ```
 
 Let's solve an example with the normal distribution:
@@ -961,14 +959,13 @@ a)  What is the probability that more than 250 people will show up, if we make 2
 b)  Plot the normal distribution.
 c)  Compare your result to the Binomial process from above.
 
-```{r Airline Exercise II ctd}
+```{r Airline Exercise II ctd, eval = F}
 # answer to a)
-1 - pnorm(q = 250, mean = mean, sd = sd)
 
 # answer to b)
 xaxis <- seq(0, 275, 0.01)
-densities<- dnorm(xaxis, mean = mean, sd = sd)
-plot(xaxis, densities,
+plot(x = xaxis, 
+     y = # ??,
      bty = "n",
      las = 1,
      col = viridis(1),
@@ -977,10 +974,8 @@ plot(xaxis, densities,
      type = "l", 
      lwd = 2, 
      cex = 2, 
-     main="PDF of overbooking example N(244.75, 5.19)"
+     main = "PDF of overbooking example N(244.75, 5.19)"
      )
 
 # answer to c)
-1 - pnorm(q = 250, mean = mean, sd = sd)
-1 - pbinom(q = 250, size = n, prob = p)
 ```
